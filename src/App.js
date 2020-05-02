@@ -5,14 +5,14 @@ import { fetchData } from './api';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    state = {
+    this.state = {
       data: {},
+
     }
   }
   async componentDidMount() {
-    const data = await fetchData();
-    console.log(data);
-    this.setState({ data: fetchDate });
+    const fetchedData = await fetchData();
+    this.setState({ data: fetchedData });
   }
   render() {
     const { data } = this.state;
