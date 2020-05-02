@@ -1,11 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
+import Cards from './components/Cards/Cards';
+import Chart from './components/Chart/Chart';
+import CountryPicker from './components/CountryPicker/CountryPicker';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>App</h1>
+      <Cards />
+      <Chart />
+      <CountryPicker />
     </div>
   );
 }
