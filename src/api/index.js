@@ -32,6 +32,8 @@ export const fetchData = async () => {
             lastUpdate: lastUpdate,
         }
         return modifiedData;
+        //or no object necessary
+        //return {confirmed, recovered, deaths, lastUpdate}
     }
     catch (error) {
         console.log(error);
