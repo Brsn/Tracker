@@ -1,6 +1,6 @@
 import Axios from 'axios';
 
-const url = 'https://covid19.mathdro.id/api'
+const url = 'https://covid19.mathdro.id/api';
 
 /* via the npm documentation
 export const fetchData = () => {
@@ -16,7 +16,7 @@ export const fetchData = () => {
 export const fetchData = async () => {
     try {
         //destructoring
-        const { data: { confirmed, recovered, deaths, lastUpdate } } = await Axios.get(url);
+        const { data: { confirmed, recovered, deaths, lastUpdate, } } = await Axios.get(url);
 
 
         /*const modifiedData = {

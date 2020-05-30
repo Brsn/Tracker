@@ -21,6 +21,7 @@ class App extends React.Component {
         <Cards />
         <CountryPicker />
         <Chart />
+        <Music />
       </div>
     );
   }
